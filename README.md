@@ -9,12 +9,6 @@ Express.js server that provides a Spotify Now Playing API for Framer portfolios.
    npm install
    ```
 
-2. Configure environment variables in `.env`:
-   ```
-   SPOTIFY_CLIENT_ID=your_client_id
-   SPOTIFY_CLIENT_SECRET=your_client_secret
-   SPOTIFY_REFRESH_TOKEN=your_refresh_token
-   ```
 
 3. Run the server:
    ```bash
