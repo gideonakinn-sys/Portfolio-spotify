@@ -1,10 +1,9 @@
 {
-  "name": "spotify-now-playing",
+  "name": "portfolio-spotify",
   "version": "1.0.0",
   "description": "Spotify Now Playing API for Framer portfolio",
   "scripts": {
-    "start": "node server.js.bak",
-    "dev": "node server.js.bak"
+    "build": "echo 'No build required'"
   },
   "dependencies": {
     "spotify-web-api-node": "^5.0.2"
