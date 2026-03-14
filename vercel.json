@@ -1,14 +1,5 @@
 {
-  "builds": [
-    {
-      "src": "api/now-playing.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/now-playing",
-      "dest": "/api/now-playing.js"
-    }
+  "rewrites": [
+    { "source": "/api/now-playing", "destination": "/api/now-playing.js" }
   ]
 }
