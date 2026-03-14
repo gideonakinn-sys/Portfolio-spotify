@@ -6,7 +6,6 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js",
-    "build": "vercel build",
     "deploy": "vercel deploy"
   },
   "dependencies": {
