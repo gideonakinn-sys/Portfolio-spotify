@@ -1,0 +1,5 @@
+.env
+credentials.env
+node_modules/
+.vercel/
+.next/

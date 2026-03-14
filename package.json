@@ -1,0 +1,21 @@
+{
+  "name": "spotify-now-playing",
+  "version": "1.0.0",
+  "description": "Spotify Now Playing API for Framer portfolio",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "vercel build",
+    "deploy": "vercel deploy"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "spotify-web-api-node": "^5.0.2"
+  },
+  "devDependencies": {
+    "vercel": "^32.0.0"
+  }
+}
