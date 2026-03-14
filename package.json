@@ -1,14 +1,16 @@
 {
   "name": "portfolio-spotify",
   "version": "1.0.0",
-  "description": "Spotify Now Playing API for Framer portfolio",
+  "private": true,
   "scripts": {
-    "build": "echo 'No build required'"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "spotify-web-api-node": "^5.0.2"
-  },
-  "devDependencies": {
-    "vercel": "^32.0.0"
   }
 }
