@@ -1,5 +1,0 @@
-{
-  "rewrites": [
-    { "source": "/api/now-playing", "destination": "/api/now-playing.js" }
-  ]
-}
