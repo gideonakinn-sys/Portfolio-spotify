@@ -7,6 +7,7 @@ const spotifyApi = new SpotifyWebApi({
 
 let accessToken = null;
 let tokenExpiry = 0;
+let lastTrack = null;
 
 async function getAccessToken() {
   if (accessToken && Date.now() < tokenExpiry) {
@@ -52,7 +53,8 @@ export default async function handler(req, res) {
     if (!data.body || !data.body.item) {
       return res.json({
         isPlaying: false,
-        track: null
+        track: lastTrack ? { ...lastTrack, isPlaying: false } : null,
+        timestamp: Date.now()
       });
     }
 
@@ -71,6 +73,8 @@ export default async function handler(req, res) {
       durationMs: item.duration_ms || 0,
       context: data.body.context?.external_urls?.spotify || null
     };
+
+    lastTrack = track;
 
     res.json({
       isPlaying: isPlaying,
